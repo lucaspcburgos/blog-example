@@ -16,5 +16,5 @@ def create_database(app):
     )
     DB.init_app(app)
     with app.app_context():
-        from app.models.test import Test
+        from app.models.user import User
         DB.create_all()
