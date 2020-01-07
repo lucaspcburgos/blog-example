@@ -1,3 +1,3 @@
-# Randook
+# Blog Example
 
-### App for random chat
+### Blog example with profiles like a social network. Developed with python flask and javascript react
