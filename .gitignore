@@ -2,4 +2,3 @@ server/app/controllers/__pycache__/
 server/app/models/__pycache__
 server/config/__pycache__
 server/config/.env
-server/.idea
