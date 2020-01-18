@@ -1,21 +1,26 @@
-from flask import Blueprint, request
+from flask import Blueprint, request, jsonify
 from app.models.user import User
+from app.policies.user import validate_user_register
+# from app.errors import DefaultErrors
 
 userBlueprint = Blueprint('user', __name__)
 
 
 @userBlueprint.route('/signup', methods=['POST'])
+@validate_user_register
 def signup():
     email = request.json.get('email')
-    name = request.json.get('name')
-    pic = request.json.get('pic')
+    username = request.json.get('username')
+    password = request.json.get('password')
 
     user = User(
         email=email,
-        name=name,
-        pic=pic
+        username=username,
+        password=password
     )
 
     user.create()
 
-    return "ok"
+    return jsonify(
+        description='User created successfully'
+    ), 201
