@@ -1,0 +1,13 @@
+.home-logo-container {
+    background-image: url('./../../public/img/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+    font-size: 13em;
+    color: white;
+    font-family: 'Gayathri', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
