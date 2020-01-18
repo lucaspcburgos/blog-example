@@ -1,0 +1,14 @@
+.home-form {
+    height: 100vh;
+    width: 50%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container {
+    width: 50%;
+    margin-top: 20px;
+}
